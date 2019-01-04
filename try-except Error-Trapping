@@ -1,0 +1,13 @@
+number_1 = input ("number 1: ") 
+number_2 = input ("number 2: ")
+
+try: # We are adding "try", cuz we think that, any wrong data can be inputted by user-side.
+  number_1 = int (number_1) 
+  number_2 = int (number_2)
+  print (number_1, "/", number_2, "=", number_1 / number_2) 
+  
+except ZeroDivisionError: # here we are going to explain error type. 
+  print ("You can't divide any number through 0!") 
+  
+except ValueError: 
+  print ("Please input a digit instead of character!")
