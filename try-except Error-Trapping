@@ -7,6 +7,7 @@ try: # We are adding "try", cuz we think that, any wrong data can be inputted by
   print (number_1, "/", number_2, "=", number_1 / number_2) 
   
 except ZeroDivisionError: # here we are going to explain error type. 
+#except (ValueError, ZeroDivisionError): this is also useful.
   print ("You can't divide any number through 0!") 
   
 except ValueError: 
